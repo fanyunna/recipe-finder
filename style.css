@@ -102,37 +102,36 @@ header {
 .ear-left,
 .ear-right {
   position: absolute;
-  top: -22px;
-  width: 38px;
-  height: 42px;
+  top: -20px;
+  width: 42px;
+  height: 30px;
   background: var(--ear);
-  border: 3px solid #ffd0de;
-  border-bottom: none;
+  clip-path: path("M 21 2 C 22.8 2 24.8 4.2 26.4 6.8 L 39.4 25 C 40.6 27.2 38.8 29 36 29 L 6 29 C 3.2 29 1.4 27.2 2.6 25 L 15.6 6.8 C 17.2 4.2 19.2 2 21 2 Z");
   z-index: -1;
 }
 
 .ear-left {
-  left: 42px;
-  border-radius: 18px 18px 4px 4px;
-  transform: rotate(-18deg);
+  left: 36px;
+  transform: rotate(-22deg);
+  transform-origin: 50% 100%;
 }
 
 .ear-right {
-  right: 42px;
-  border-radius: 18px 18px 4px 4px;
-  transform: rotate(18deg);
+  right: 36px;
+  transform: rotate(22deg);
+  transform-origin: 50% 100%;
 }
 
 .ear-left::after,
 .ear-right::after {
   content: "";
   position: absolute;
-  left: 8px;
+  left: 13px;
   top: 10px;
   width: 16px;
-  height: 22px;
+  height: 14px;
   background: var(--ear-inner);
-  border-radius: 12px;
+  clip-path: path("M 8 1.2 C 9 1.2 10.2 2.6 11 4.2 L 14.6 11.2 C 15.2 12.4 14.4 13.2 13 13.2 L 3 13.2 C 1.6 13.2 0.8 12.4 1.4 11.2 L 5 4.2 C 5.8 2.6 7 1.2 8 1.2 Z");
 }
 
 .badge {
@@ -207,33 +206,44 @@ h1 i {
 
 .card-ears {
   position: absolute;
-  top: -16px;
+  top: -18px;
   left: 0;
   right: 0;
-  height: 20px;
+  height: 28px;
   pointer-events: none;
+  z-index: 1;
 }
 
 .card-ear {
   position: absolute;
   top: 0;
-  width: 26px;
-  height: 28px;
+  width: 32px;
+  height: 26px;
   background: var(--ear);
-  border: 3px solid #ffd0de;
-  border-bottom: none;
+  clip-path: path("M 16 1.5 C 17.4 1.5 19 3.4 20.2 5.6 L 30.2 21.5 C 31.2 23.2 29.8 25 27.6 25 L 4.4 25 C 2.2 25 0.8 23.2 1.8 21.5 L 11.8 5.6 C 13 3.4 14.6 1.5 16 1.5 Z");
 }
 
 .card-ear.left {
-  left: 22px;
-  border-radius: 14px 14px 2px 2px;
-  transform: rotate(-16deg);
+  left: 26px;
+  transform: rotate(-22deg);
+  transform-origin: 50% 100%;
 }
 
 .card-ear.right {
-  right: 22px;
-  border-radius: 14px 14px 2px 2px;
-  transform: rotate(16deg);
+  right: 26px;
+  transform: rotate(22deg);
+  transform-origin: 50% 100%;
+}
+
+.card-ear::after {
+  content: "";
+  position: absolute;
+  left: 9px;
+  top: 8px;
+  width: 14px;
+  height: 12px;
+  background: var(--ear-inner);
+  clip-path: path("M 7 1.2 C 8 1.2 9 2.6 9.8 4.2 L 12.8 9.6 C 13.4 10.8 12.6 11.6 11.2 11.6 L 2.8 11.6 C 1.4 11.6 0.6 10.8 1.2 9.6 L 4.2 4.2 C 5 2.6 6 1.2 7 1.2 Z");
 }
 
 .meal img {
