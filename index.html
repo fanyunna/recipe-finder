@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>fyn的前端网页作品集</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;700;800&family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -12,38 +15,83 @@
           referrerpolicy="no-referrer">
 </head>
 <body>
+    <div class="paw-bg" aria-hidden="true"></div>
+
+    <div class="floating-paws" aria-hidden="true">
+        <span class="float-paw paw-1">🐾</span>
+        <span class="float-paw paw-2">🐾</span>
+        <span class="float-paw paw-3">🐾</span>
+        <span class="float-paw paw-4">🐾</span>
+    </div>
+
     <div class="container">
         <header>
-            <h1><i class="fa-solid fa-book"></i>fyn的前端网页作品集</h1>
-            <p>这是我的前端网页作品，点击跳转到具体的页面</p>
+            <div class="hero-card">
+                <span class="ear-left" aria-hidden="true"></span>
+                <span class="ear-right" aria-hidden="true"></span>
+                <p class="badge"><i class="fa-solid fa-paw"></i> 喵喵作品集</p>
+                <h1>
+                    <i class="fa-solid fa-cat"></i>
+                    fyn的前端网页作品集
+                </h1>
+                <p class="subtitle">这是我的前端网页作品，点一点卡片就能跳转哦 ～ 🐱</p>
+                <div class="whiskers" aria-hidden="true">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
         </header>
 
-        <div id = "meals" class="meals-container">
+        <div id="meals" class="meals-container">
             <div class="meal" data-url="https://web-task1-five.vercel.app/">
+                <div class="card-ears" aria-hidden="true">
+                    <span class="card-ear left"></span>
+                    <span class="card-ear right"></span>
+                </div>
                 <img src="images/task1.png" alt="Register Form 项目截图">
                 <div class="meal-info">
                     <h3 class="meal-title">Register Form</h3>
-                    <div class="meal-category">Register</div>
+                    <div class="meal-category">Register 🐾</div>
+                    <p class="meal-hint">点我去登记吧</p>
                 </div>
             </div>
 
             <div class="meal" data-url="https://quiz-game-eight-ebon.vercel.app/">
+                <div class="card-ears" aria-hidden="true">
+                    <span class="card-ear left"></span>
+                    <span class="card-ear right"></span>
+                </div>
                 <img src="images/quizgame.png" alt="Quiz Game 项目截图">
                 <div class="meal-info">
                     <h3 class="meal-title">Quiz Game</h3>
-                    <div class="meal-category">Quiz</div>
+                    <div class="meal-category">Quiz 🐾</div>
+                    <p class="meal-hint">和小猫一起答题</p>
                 </div>
             </div>
 
             <div class="meal" data-url="https://recipe-finder-dusky-mu.vercel.app/">
+                <div class="card-ears" aria-hidden="true">
+                    <span class="card-ear left"></span>
+                    <span class="card-ear right"></span>
+                </div>
                 <img src="images/recipe-finder.png" alt="Recipe Finder 项目截图">
                 <div class="meal-info">
                     <h3 class="meal-title">Recipe Finder</h3>
-                    <div class="meal-category">Find</div>
+                    <div class="meal-category">Find 🐾</div>
+                    <p class="meal-hint">找点好吃的投喂</p>
                 </div>
             </div>
         </div>
+
+        <footer>
+            <p>全是小猫咪码出来的小站 ，有问题勿找本人，ฅ^•ﻌ•^ฅ</p>
+        </footer>
     </div>
+
+    <aside class="cat-mascot" aria-hidden="true">
+        <img src="images/tortie-cat-cartoon.jpg" alt="">
+        <span class="meow">喵～</span>
+    </aside>
+
     <script src="script.js"></script>
 </body>
 </html>
